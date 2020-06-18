@@ -1,0 +1,174 @@
+aios0/
+               aios0/m0                    aios0/get_oscilloscope_val
+               aios0/m1                    aios0/hw_version_major
+               aios0/brake_resistor_armed  aios0/hw_version_minor
+               aios0/can                   aios0/hw_version_variant
+               aios0/config                aios0/reboot
+               aios0/enter_dfu_mode        aios0/save_configuration
+               aios0/erase_configuration   aios0/serial_number
+               aios0/fw_version_major      aios0/system_stats
+               aios0/fw_version_minor      aios0/test_function
+               aios0/fw_version_revision   aios0/test_property
+               aios0/fw_version_unreleased aios0/user_config_loaded
+               aios0/get_adc_voltage       aios0/vbus_voltage
+
+aios0/config/
+               aios0/config/brake_resistance
+               aios0/config/dc_bus_overvoltage_trip_level
+               aios0/config/dc_bus_undervoltage_trip_level
+               aios0/config/enable_ascii_protocol_on_usb
+               aios0/config/enable_i2c_instead_of_can
+               aios0/config/enable_uart
+               aios0/config/gpio1_pwm_mapping
+               aios0/config/gpio2_pwm_mapping
+               aios0/config/gpio3_analog_mapping
+               aios0/config/gpio3_pwm_mapping
+               aios0/config/gpio4_analog_mapping
+               aios0/config/gpio4_pwm_mapping
+
+aios0/m0/
+               aios0/m0/config               aios0/m0/motor
+               aios0/m0/controller           aios0/m0/requested_state
+               aios0/m0/current_state        aios0/m0/sensorless_estimator
+               aios0/m0/encoder              aios0/m0/step_dir_active
+               aios0/m0/error                aios0/m0/trap_traj
+               aios0/m0/lockin_state         aios0/m0/watchdog_feed
+               aios0/m0/loop_counter
+
+aios0/m0/config/
+                       aios0/m0/config/calibration_lockin
+                       aios0/m0/config/counts_per_step
+                       aios0/m0/config/dir_gpio_pin
+                       aios0/m0/config/enable_step_dir
+                       aios0/m0/config/general_lockin
+                       aios0/m0/config/sensorless_ramp
+                       aios0/m0/config/startup_closed_loop_control
+                       aios0/m0/config/startup_encoder_index_search
+                       aios0/m0/config/startup_encoder_offset_calibration
+                       aios0/m0/config/startup_motor_calibration
+                       aios0/m0/config/startup_sensorless_control
+                       aios0/m0/config/step_gpio_pin
+                       aios0/m0/config/watchdog_timeout
+
+aios0/m0/controller/
+                        aios0/m0/controller/config
+                        aios0/m0/controller/current_setpoint
+                        aios0/m0/controller/error
+                        aios0/m0/controller/move_incremental
+                        aios0/m0/controller/move_to_pos
+                        aios0/m0/controller/pos_setpoint
+                        aios0/m0/controller/set_current_setpoint
+                        aios0/m0/controller/set_pos_setpoint
+                        aios0/m0/controller/set_vel_setpoint
+                        aios0/m0/controller/start_anticogging_calibration
+                        aios0/m0/controller/vel_integrator_current
+                        aios0/m0/controller/vel_ramp_enable
+                        aios0/m0/controller/vel_ramp_target
+                        aios0/m0/controller/vel_setpoint
+
+aios0/m0/controller/config/
+                            aios0/m0/controller/config/control_mode
+                            aios0/m0/controller/config/pos_gain
+                            aios0/m0/controller/config/setpoints_in_cpr
+                            aios0/m0/controller/config/vel_gain
+                            aios0/m0/controller/config/vel_integrator_gain
+                            aios0/m0/controller/config/vel_limit
+                            aios0/m0/controller/config/vel_limit_tolerance
+                            aios0/m0/controller/config/vel_ramp_rate
+
+aios0/m0/encoder/
+                             aios0/m0/encoder/calib_scan_response
+                             aios0/m0/encoder/config
+                             aios0/m0/encoder/count_in_cpr
+                             aios0/m0/encoder/error
+                             aios0/m0/encoder/hall_state
+                             aios0/m0/encoder/index_found
+                             aios0/m0/encoder/interpolation
+                             aios0/m0/encoder/is_ready
+                             aios0/m0/encoder/phase
+                             aios0/m0/encoder/pos_cpr
+                             aios0/m0/encoder/pos_estimate
+                             aios0/m0/encoder/set_linear_count
+                             aios0/m0/encoder/shadow_count
+                             aios0/m0/encoder/vel_estimate
+
+aios0/m0/encoder/config/
+                             aios0/m0/encoder/config/bandwidth
+                             aios0/m0/encoder/config/calib_range
+                             aios0/m0/encoder/config/calib_scan_distance
+                             aios0/m0/encoder/config/calib_scan_omega
+                             aios0/m0/encoder/config/cpr
+                             aios0/m0/encoder/config/enable_phase_interpolation
+                             aios0/m0/encoder/config/find_idx_on_lockin_only
+                             aios0/m0/encoder/config/idx_search_unidirectional
+                             aios0/m0/encoder/config/ignore_illegal_hall_state
+                             aios0/m0/encoder/config/mode
+                             aios0/m0/encoder/config/offset
+                             aios0/m0/encoder/config/offset_float
+                             aios0/m0/encoder/config/pre_calibrated
+                             aios0/m0/encoder/config/use_index
+                             aios0/m0/encoder/config/zero_count_on_find_idx
+
+aios0/m0/motor/
+                          aios0/m0/motor/armed_state
+                          aios0/m0/motor/config
+                          aios0/m0/motor/current_control
+                          aios0/m0/motor/current_meas_phB
+                          aios0/m0/motor/current_meas_phC
+                          aios0/m0/motor/DC_calib_phB
+                          aios0/m0/motor/DC_calib_phC
+                          aios0/m0/motor/error
+                          aios0/m0/motor/gate_driver
+                          aios0/m0/motor/get_inverter_temp
+                          aios0/m0/motor/is_calibrated
+                          aios0/m0/motor/phase_current_rev_gain
+                          aios0/m0/motor/thermal_current_lim
+                          aios0/m0/motor/timing_log
+
+aios0/m0/motor/current_control/
+                          p_gain
+                          i_gain
+                          v_current_control_integral_d
+                          v_current_control_integral_q
+                          Ibus
+                          final_v_alpha
+                          final_v_beta
+                          Id_setpoint
+                          Iq_setpoint
+                          Iq_measured
+                          Id_measured
+                          I_measured_report_filter_k
+                          max_allowed_current
+                          overcurrent_trip_level
+                          acim_rotor_flux
+                          async_phase_vel
+                          async_phase_offset
+
+aios0/m0/motor/config/
+                        aios0/m0/motor/config/calibration_current
+                        aios0/m0/motor/config/current_control_bandwidth
+                        aios0/m0/motor/config/current_lim
+                        aios0/m0/motor/config/current_lim_tolerance
+                        aios0/m0/motor/config/direction
+                        aios0/m0/motor/config/inverter_temp_limit_lower
+                        aios0/m0/motor/config/inverter_temp_limit_upper
+                        aios0/m0/motor/config/motor_type
+                        aios0/m0/motor/config/phase_inductance
+                        aios0/m0/motor/config/phase_resistance
+                        aios0/m0/motor/config/pole_pairs
+                        aios0/m0/motor/config/pre_calibrated
+                        aios0/m0/motor/config/requested_current_range
+
+aios0/m0/trap_traj/config/
+                                     aios0/m0/trap_traj/config/A_per_css
+                                     aios0/m0/trap_traj/config/accel_limit
+                                     aios0/m0/trap_traj/config/decel_limit
+                                     aios0/m0/trap_traj/config/vel_limit
+
+
+
+
+
+
+// const char *ssid = "Xiaomi_Yun";
+// const char *password = "19890814";
