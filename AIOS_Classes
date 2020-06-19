@@ -165,10 +165,3 @@ aios0/m0/trap_traj/config/
                                      aios0/m0/trap_traj/config/decel_limit
                                      aios0/m0/trap_traj/config/vel_limit
 
-
-
-
-
-
-// const char *ssid = "Xiaomi_Yun";
-// const char *password = "19890814";
